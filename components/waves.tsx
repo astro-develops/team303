@@ -1,6 +1,5 @@
 import React from "react";
-import styles from "./Waves.module.css";
-import clsx from "clsx";
+import "./waves.css";
 
 interface WavesProps {
   flipVertical?: boolean;
@@ -15,11 +14,11 @@ const Waves: React.FC<WavesProps> = ({
 }) => {
   return (
     <div
-      className={clsx(styles.wrapper, flipVertical && styles.flippedVertical)}
+      className={`wrapper ${flipVertical? "flippedVertical":0}`}
       style={{ height }}
     >
       <svg
-        className={styles.waves}
+        className={"waves"}
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 24 150 28"
         preserveAspectRatio="none"
@@ -32,7 +31,7 @@ const Waves: React.FC<WavesProps> = ({
                58-8 88-8 58 8 88 8 v44h-352z"
           />
         </defs>
-<g className={styles.parallax}>
+<g className={"parallax"}>
   <use href="#gentle-wave" x="48" y="-9" fill={colors[0]} />
   <use href="#gentle-wave" x="48" y="-6" fill={colors[1]} />
   <use href="#gentle-wave" x="48" y="-3" fill={colors[2]} />

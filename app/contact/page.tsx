@@ -15,7 +15,7 @@ export default function Home() {
             alt="Contact" 
             width={500} 
             height={300} 
-            className="mb-8 lg:mb-16 mx-auto lg:mx-0 w-full max-w-[300px] md:max-w-[500px]"
+            className="mb-8 mt-20 lg:mb-16 mx-auto lg:mx-0 w-full max-w-[300px] md:max-w-[500px]"
           />
           <p className="text-base md:text-lg text-gray-700 mb-6 max-w-md mx-auto lg:mx-0">
             Have questions? Reach out and our team will get back to you quickly.

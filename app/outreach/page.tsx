@@ -121,7 +121,7 @@ export default function InitiativesPage() {
         transition={{ duration: 0.5 }}
         className="flex w-full justify-center pt-36"
       >
-        <Image src="text/Outreach.svg" alt="" width={400} height={100} />
+        <Image src="text/Outreach.svg" alt="" width={400} height={100}  className="max-w-[250px] md:max-w-[400px]" />
       </motion.div>
 
       <section className="mx-auto max-w-7xl p-6">

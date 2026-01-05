@@ -73,7 +73,7 @@ export default function SponsorsPage() {
         transition={{ duration: 0.6 }}
         className="text-center flex flex-col items-center max-w-3xl space-y-6"
       >
-        <Image src="text/ourSponsors.svg" alt="" width={500} height={100} />
+        <Image src="text/OurSponsors.svg" alt="" width={500} height={100} className="max-w-[300px] md:max-w-[500px]" />
         <p className="text-sm text-[#0C2B2C]">
           Team 303 would not be possible without the generous support of our
           sponsors. Thank you for helping us inspire the next generation of

@@ -12,8 +12,6 @@ export default function Home() {
     return (
         <main className="bg-[#DBE9EE] text-[#0C2B2C] m-0 p-0 overflow-x-hidden">
             <FrcKickoffToast />
-
-            {/* HERO SECTION */}
             <section className="min-h-screen flex flex-col justify-center items-center px-6 md:px-0 relative z-10">
                 <div className="flex flex-col lg:flex-row w-full pt-20 items-center">
                     <div className="lg:pl-30 lg:pt-30 flex flex-col gap-10 lg:gap-20 items-center lg:items-start text-center lg:text-left">
@@ -29,12 +27,10 @@ export default function Home() {
                 </div>
             </section>
 
-            {/* WHO ARE WE SECTION (With Waves at top) */}
             <section
                 className="min-h-[70vh] bg-fixed bg-no-repeat bg-cover bg-center relative text-white p-0 -mt-[1px] z-20"
                 style={{ backgroundImage: "url('/img/anomaly2025.png')" }}
             >
-                {/* Ensure waves overlap the hero section slightly */}
                 <div className="relative -top-[1px]">
                     <Waves flipVertical />
                 </div>
@@ -50,7 +46,6 @@ export default function Home() {
                     </div>
                 </div>
 
-                {/* BOTTOM ANGLE SVG: Pulled down 1px to prevent gap */}
                 <svg
                     viewBox="0 0 1440 76"
                     fill="none"
@@ -62,7 +57,6 @@ export default function Home() {
                 </svg>
             </section>
 
-            {/* SPONSORS SECTION */}
             <section className="min-h-screen bg-[#DBE9EE] flex flex-col justify-center items-center text-white text-center lg:py-0 lg:-mt-[12rem] lg:-mb-[8rem] relative z-10">
                 <Image src="/text/OurSponsors.svg" alt="" width={400} height={100} className="-rotate-[3.5deg] p-6 mb-4 w-full mt-12 max-w-[400px]" />
                 <SponsorMarquee sponsors={sponsors} />
@@ -83,12 +77,10 @@ export default function Home() {
                 </div>
             </section>
 
-            {/* COMMUNITY SECTION (With Top Angle SVG) */}
             <section
                 className="min-h-[70vh] flex flex-col justify-center bg-fixed bg-no-repeat bg-cover bg-center relative text-white p-0 -mt-[1px] z-20"
                 style={{ backgroundImage: "url('/img/brikramage.png')" }}
             >
-                {/* TOP ANGLE SVG: Pushed up 1px to hide the seam */}
                 <svg
                     viewBox="0 0 1440 76"
                     fill="none"
@@ -112,8 +104,7 @@ export default function Home() {
                     </motion.a>
                 </div>
 
-                {/* Waves at the very bottom */}
-                <div className="absolute bottom-[-1px] left-0 w-full block">
+                <div className="absolute left-0 w-full block bottom-0">
                     <Waves colors={["#1C6463aa", "#74B8B700", "#0D7E7Cdd", "#74B8B7"]} height={"10vh"} />
                 </div>
             </section>

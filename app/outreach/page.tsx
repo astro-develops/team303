@@ -7,7 +7,6 @@ import { cn } from "@/lib/utils";
 import Image from "next/image";
 import { motion, Variants } from "framer-motion";
 
-// Define the interface for an outreach item
 interface OutreachItem {
   id: string;
   title: string;
@@ -24,19 +23,18 @@ const containerVariants: Variants = {
 
 const cardVariants: Variants = {
   hidden: { opacity: 0, y: 30 },
-  visible: { 
-    opacity: 1, 
-    y: 0, 
-    transition: { 
-      duration: 0.5, 
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.5,
       ease: "easeOut" as const
-    } 
+    }
   },
 };
 
 const highlightIds = ["charlie", "mstdc", "steamweek"];
 
-// Cast the JSON data to our interface
 const allInitiatives: OutreachItem[] = [
   ...outreachData.mentoring,
   ...outreachData.steam_outreach,
@@ -47,7 +45,7 @@ const highlights = allInitiatives.filter((item) => highlightIds.includes(item.id
 
 function HighlightSection() {
   return (
-    <motion.div 
+    <motion.div
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true }}
@@ -64,7 +62,7 @@ function HighlightSection() {
           )}
         >
           <div className="relative aspect-video scale-90 w-full flex-1 overflow-hidden rounded-2xl bg-white/20 shadow-xl border border-[#008080]/20">
-            <Image src={`/outreach/${item.id}.png`} alt={item.title} fill className="object-cover"/>
+            <Image src={`/outreach/${item.id}.png`} alt={item.title} fill className="object-cover" />
           </div>
           <div className="flex-1 space-y-6">
             <h2 className="text-3xl font-bold md:text-4xl text-[#0C2B2C]">
@@ -80,10 +78,9 @@ function HighlightSection() {
   );
 }
 
-// Fixed the any[] type here
 function InitiativeGrid({ items }: { items: OutreachItem[] }) {
   return (
-    <motion.div 
+    <motion.div
       variants={containerVariants}
       initial="hidden"
       animate="visible"
@@ -99,7 +96,7 @@ function InitiativeGrid({ items }: { items: OutreachItem[] }) {
             </CardHeader>
             <CardContent className="flex flex-1 flex-col space-y-4">
               <div className="relative aspect-[4/3] w-full overflow-hidden rounded-xl bg-[#DBE9EE]">
-                <Image src={`/outreach/${item.id}.png`} alt={item.title} fill className="object-cover"/>
+                <Image src={`/outreach/${item.id}.png`} alt={item.title} fill className="object-cover" />
               </div>
               <p className="flex-1 text-sm leading-relaxed text-[#0C2B2C]/80">
                 {item.description}
@@ -115,17 +112,17 @@ function InitiativeGrid({ items }: { items: OutreachItem[] }) {
 export default function InitiativesPage() {
   return (
     <main className="min-h-screen bg-[#DBE9EE] text-[#0C2B2C] pb-20">
-      <motion.div 
+      <motion.div
         initial={{ opacity: 0, scale: 0.9 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.5 }}
         className="flex w-full justify-center pt-36"
       >
-        <Image src="text/Outreach.svg" alt="" width={400} height={100}  className="max-w-[250px] md:max-w-[400px]" />
+        <Image src="text/Outreach.svg" alt="" width={400} height={100} className="max-w-[250px] md:max-w-[400px]" />
       </motion.div>
 
       <section className="mx-auto max-w-7xl p-6">
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.3 }}
@@ -142,29 +139,37 @@ export default function InitiativesPage() {
 
         <div className="mt-20">
           <Tabs defaultValue="mentoring" className="w-full">
-            <div className="mb-10 flex justify-center">
-              <TabsList className="flex h-auto flex-wrap justify-center gap-4 bg-transparent p-0">
-                {["mentoring", "steam", "community"].map((tab) => (
+            <div className="mb-10 flex justify-center w-full">
+              <TabsList className="flex flex-wrap justify-center gap-2 bg-transparent p-0 w-full h-auto min-h-0">
+                {["mentoring", "steam", "community"].map((tab, index) => (
                   <TabsTrigger
                     key={tab}
                     value={tab}
-                    className="rounded-full border-[2px] border-[#008080] bg-transparent px-8 py-2 text-base font-medium text-[#0C2B2C] transition-all hover:bg-[#008080]/10 data-[state=active]:bg-[#008080] data-[state=active]:text-white uppercase tracking-wide"
+                    className={cn(
+                      "rounded-md border-[2px] border-[#008080] bg-transparent transition-all h-auto",
+                      "text-[#0C2B2C] hover:bg-[#008080]/10",
+                      "data-[state=active]:bg-[#008080] data-[state=active]:text-white",
+                      "w-full text-xs py-2 px-2",
+                      index < 2 ? "basis-[calc(50%-4px)]" : "basis-full",
+                      "md:basis-auto md:w-auto md:px-8 md:py-2 md:text-base md:font-medium"
+                    )}
                   >
                     {tab === "steam" ? "STEAM Outreach" : tab === "community" ? "Community & Service" : "Mentoring"}
                   </TabsTrigger>
                 ))}
               </TabsList>
             </div>
-
-            <TabsContent value="mentoring">
-              <InitiativeGrid items={outreachData.mentoring} />
-            </TabsContent>
-            <TabsContent value="steam">
-              <InitiativeGrid items={outreachData.steam_outreach} />
-            </TabsContent>
-            <TabsContent value="community">
-              <InitiativeGrid items={outreachData.community_service} />
-            </TabsContent>
+            <div className="mt-4 md:mt-0">
+              <TabsContent value="mentoring" className="mt-0">
+                <InitiativeGrid items={outreachData.mentoring} />
+              </TabsContent>
+              <TabsContent value="steam" className="mt-0">
+                <InitiativeGrid items={outreachData.steam_outreach} />
+              </TabsContent>
+              <TabsContent value="community" className="mt-0">
+                <InitiativeGrid items={outreachData.community_service} />
+              </TabsContent>
+            </div>
           </Tabs>
         </div>
       </section>

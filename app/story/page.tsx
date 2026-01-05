@@ -39,7 +39,7 @@ export default function HistoryPage() {
         transition={{ duration: 1 }}
         className="flex w-full justify-center pt-36"
       >
-        <Image src="text/OurStory.svg" alt="History" width={400} height={100} />
+        <Image src="text/OurStory.svg" alt="History" width={400} height={100} className="max-w-[250px] md:max-w-[400px]"  />
       </motion.div>
 
       <section className="max-w-7xl mx-auto px-6 pb-12">

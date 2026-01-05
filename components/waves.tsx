@@ -1,4 +1,3 @@
-// components/Waves.tsx
 import React from "react";
 import styles from "./Waves.module.css";
 import clsx from "clsx";

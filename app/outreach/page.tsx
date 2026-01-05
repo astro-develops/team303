@@ -7,6 +7,13 @@ import { cn } from "@/lib/utils";
 import Image from "next/image";
 import { motion, Variants } from "framer-motion";
 
+// Define the interface for an outreach item
+interface OutreachItem {
+  id: string;
+  title: string;
+  description: string;
+}
+
 const containerVariants: Variants = {
   hidden: { opacity: 0 },
   visible: {
@@ -28,11 +35,14 @@ const cardVariants: Variants = {
 };
 
 const highlightIds = ["charlie", "mstdc", "steamweek"];
-const allInitiatives = [
+
+// Cast the JSON data to our interface
+const allInitiatives: OutreachItem[] = [
   ...outreachData.mentoring,
   ...outreachData.steam_outreach,
   ...outreachData.community_service,
 ];
+
 const highlights = allInitiatives.filter((item) => highlightIds.includes(item.id));
 
 function HighlightSection() {
@@ -70,7 +80,8 @@ function HighlightSection() {
   );
 }
 
-function InitiativeGrid({ items }: { items: any[] }) {
+// Fixed the any[] type here
+function InitiativeGrid({ items }: { items: OutreachItem[] }) {
   return (
     <motion.div 
       variants={containerVariants}

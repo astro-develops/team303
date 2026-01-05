@@ -40,18 +40,30 @@ export async function getEventDetails(eventKey: string): Promise<RobotEvent> {
 
     let wins = 0;
     let losses = 0;
+
     for (const m of matches) {
-      if (!m.alliances) continue;
+      // Safety check for alliances
+      if (!m.alliances?.red || !m.alliances?.blue) continue;
+
       const isRed = m.alliances.red.team_keys.includes("frc303");
       const isBlue = m.alliances.blue.team_keys.includes("frc303");
+      
       if (!isRed && !isBlue) continue;
+
       const winning = m.winning_alliance;
-      if ((winning === "red" && isRed) || (winning === "blue" && isBlue)) wins++;
-      else if (winning && winning !== "") losses++;
+
+      // Handle win logic
+      if ((winning === "red" && isRed) || (winning === "blue" && isBlue)) {
+        wins++;
+      } 
+      // Handle loss logic: if a winner exists ("red" or "blue") and it wasn't us
+      else if (winning === "red" || winning === "blue") {
+        losses++;
+      }
     }
 
     const data: RobotEvent = {
-      eventName: eventKey, // TBA details fetch usually requires a separate event call for the name
+      eventName: eventKey, 
       eventKey,
       rank,
       totalTeams,
@@ -60,12 +72,13 @@ export async function getEventDetails(eventKey: string): Promise<RobotEvent> {
       ties: 0,
       awards: awards.map((a) => a.name),
       overall_status: formatEventStatus(rank, wins, losses),
-      start_date: "", // Placeholder as this specific endpoint doesn't return it
+      start_date: "", 
     };
 
     EVENT_CACHE[eventKey] = { data, time: now };
     return data;
   } catch (err) {
+    console.error("Error fetching event details:", err);
     return {
       eventName: "Unknown",
       eventKey,

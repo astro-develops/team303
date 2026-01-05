@@ -100,7 +100,7 @@ export default function DiamondModal({ open, season, onClose }: Props) {
             <div className="mt-6 flex justify-end">
               <button
                 onClick={onClose}
-                className="px-4 py-2 bg-blue-600 text-white rounded-md"
+                className="px-4 py-2 bg-[#008080] text-white rounded-md"
               >
                 Close
               </button>

@@ -1,7 +1,7 @@
 // src/lib/tba/getAllRobots.ts
 import { getRobotsByYear, RobotYear } from "./getRobotsByYear";
 
-const skipYears = [2021];
+const skipYears = [2021, 2026];
 const VALID_YEARS: number[] = [];
 
 for (let i = 1999; i <= new Date().getFullYear(); i++) {

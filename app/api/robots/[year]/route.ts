@@ -1,16 +1,27 @@
 import { NextResponse } from "next/server";
-import { getRobotsByYear } from "@/lib/tba/getRobotsByYear";
+import { getRobotsByYear, RobotYear } from "@/lib/tba/getRobotsByYear";
 
-let YEAR_CACHE: Record<number, any> = {};
+const YEAR_CACHE: Record<number, RobotYear> = {};
 
 export async function GET(req: Request, { params }: { params: { year: string } }) {
   const yearNum = parseInt(params.year, 10);
-  if (!yearNum) return NextResponse.json({ error: "Invalid year" });
+  
+  if (isNaN(yearNum)) {
+    return NextResponse.json({ error: "Invalid year" }, { status: 400 });
+  }
 
-  if (YEAR_CACHE[yearNum]) return NextResponse.json(YEAR_CACHE[yearNum]);
+  if (YEAR_CACHE[yearNum]) {
+    return NextResponse.json(YEAR_CACHE[yearNum]);
+  }
 
-  const data = await getRobotsByYear(yearNum);
-  YEAR_CACHE[yearNum] = data;
+  try {
+    const data = await getRobotsByYear(yearNum);
+    
+    YEAR_CACHE[yearNum] = data;
 
-  return NextResponse.json(data);
+    return NextResponse.json(data);
+  } catch (error) {
+    console.error(`Error fetching robot data for ${yearNum}:`, error);
+    return NextResponse.json({ error: "Failed to fetch data" }, { status: 500 });
+  }
 }

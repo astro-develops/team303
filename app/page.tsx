@@ -98,7 +98,7 @@ export default function Home() {
                         whileHover={{ scale: 1.05 }}
                         transition={{ type: "spring", stiffness: 400, damping: 10 }}
                         className="box rounded-sm bg-[#DBE9EE]/80 px-6 py-3 text-[#000]"
-                        href="../sponsors"
+                        href="../outreach"
                     >
                         See what we do
                     </motion.a>

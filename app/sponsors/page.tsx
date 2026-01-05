@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { sponsors } from "@/data/sponsors.json";
 import { motion, Variants } from "framer-motion";
+import Waves from "@/components/waves";
 
 type SponsorTier = "platinum" | "gold" | "silver" | "bronze";
 
@@ -66,7 +67,8 @@ export default function SponsorsPage() {
   }
 
   return (
-    <main className="flex flex-col items-center px-8 py-36 gap-24 text-[#0C2B2C]">
+    <main className="relative min-h-screen overflow-hidden bg-[#DBE9EE]">
+    <section className="flex flex-col items-center px-8 py-36 gap-24 text-[#0C2B2C]">
       <motion.section
         initial={{ opacity: 0, y: 40 }}
         animate={{ opacity: 1, y: 0 }}
@@ -123,6 +125,13 @@ export default function SponsorsPage() {
           </motion.section>
         );
       })}
-    </main>
+    </section>
+      <div className="relative bottom-0 left-0 w-full">
+        <Waves
+          colors={["#1C6463aa", "#74B8B700", "#0D7E7Cdd", "#74B8B7"]}
+          height={"10vh"}
+        />
+      </div>
+      </main>
   );
 }

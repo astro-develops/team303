@@ -19,9 +19,9 @@ export default function Footer() {
               the next generation of STEM leaders.
             </p>
             <div className="flex gap-4">
-              <SocialLink href="https://instagram.com" icon={<Instagram size={20} />} />
-              <SocialLink href="https://youtube.com" icon={<Youtube size={20} />} />
-              <SocialLink href="mailto:contact@team303.com" icon={<Mail size={20} />} />
+              <SocialLink href="https://www.instagram.com/frcteam303/" icon={<Instagram size={20} />} />
+              <SocialLink href="https://www.youtube.com/@TheTESTTeam" icon={<Youtube size={20} />} />
+              <SocialLink href="mailto:frcteam303.general@gmail.com" icon={<Mail size={20} />} />
             </div>
           </div>
 

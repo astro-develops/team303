@@ -6,6 +6,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
 import { motion, Variants } from "framer-motion";
+import Waves from "@/components/waves";
 
 interface OutreachItem {
   id: string;
@@ -111,7 +112,7 @@ function InitiativeGrid({ items }: { items: OutreachItem[] }) {
 
 export default function InitiativesPage() {
   return (
-    <main className="min-h-screen bg-[#DBE9EE] text-[#0C2B2C] pb-20">
+    <main className="min-h-screen bg-[#DBE9EE] text-[#0C2B2C]">
       <motion.div
         initial={{ opacity: 0, scale: 0.9 }}
         animate={{ opacity: 1, scale: 1 }}
@@ -173,6 +174,12 @@ export default function InitiativesPage() {
           </Tabs>
         </div>
       </section>
+      <div className="relative bottom-0 left-0 w-full">
+        <Waves
+          colors={["#1C6463aa", "#74B8B700", "#0D7E7Cdd", "#74B8B7"]}
+          height={"10vh"}
+        />
+      </div>
     </main>
   );
 }

@@ -1,0 +1,46 @@
+{
+  "story": [
+    {
+      "id": 1,
+      "title": "Beginnings (1999 - 2006)",
+      "text": "FRC Team 303: Vulgen's Heroes was created in 1998 as a partnership between Bihler of America, the Midland school and Pingry Academy. After their first season in 1999, Pingry decided to not participate the following year, and Bridgewater-Raritan High School took their place. Throughout the next several years, this new partnership was incredibly successful. The BRHS and Midland students had the opportunity to work alongside real engineers to solve the fun challenge that FIRST created every year. After their second season, the team also changed its name from Vulgen’s Heroes to Panther Robotics.",
+      "imageUrl": "/img/beginnings.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Relocation (2007)",
+      "text": "After the successful first several seasons, Bihler could no longer allow their facilities to be used. This was problematic as the workspace, mentors, and funding all came from them. Team 303 was now exclusively part of the Bridgewater-Raritan High School. After searching classrooms and garages, Pressure Tube Manufacturing (PTM) stepped in and allowed Panther Robotics use of its facilities.",
+      "imageUrl": "/img/relocation.jpg"
+    },
+    {
+      "id": 3,
+      "title": "303 Renaissance (2008 - 2010)",
+      "text": "With new-found stability, Team 303 went through an era of massive growth. They started giving back to the community via raking leaves and shoveling snow for the elderly and creating an engineering program for 4th and 5th graders. The team also started an off-season event called the Bridgewater-Raritan Battle Royale (BR2). The growth culminated in a successful 2010 season, making waves in both the NJ and Connecticut Regionals.",
+      "imageUrl": "/img/renaissance.png"
+    },
+    {
+      "id": 4,
+      "title": "A New Era (2011)",
+      "text": "At the end of 2011, Team 303 lost their workspace once more after an ownership change at PTM. Fortunately, the team quickly found a permanent home at STS Tire & Auto Center. 2011 was a huge year, winning both the New Jersey and Philadelphia Regionals and making it to eliminations at the World Championship. That summer, the Student Leadership Council (SLC) was formed, marking a transition of power to the students.",
+      "imageUrl": "/img/newera.png"
+    },
+    {
+      "id": 5,
+      "title": "Testing… (2012 - 2019)",
+      "text": "Panther Robotics became The T.E.S.T. Team 303, adopting a unique teal color and the SMPTE color bar logo. T.E.S.T. stands for Technologists, Engineers, Students, and Teachers. In 2013, the team captained the alliance that won their entire division at the World Championship. In 2014, they won the Chairman’s award for the first time. In 2019, the leadership system was revamped into a structure of Project Managers and Supervisors to create better harmony.",
+      "imageUrl": "/img/testing.png"
+    },
+    {
+      "id": 6,
+      "title": "Rise Up (2020 - 2022)",
+      "text": "In 2020, the team won the Engineering Inspiration and Donald Bowers Awards. During COVID, they focused on Virtual Collaboration. However, Hurricane Ida later flooded the STS warehouse, destroying equipment and supplies. With help from the School District, Team 303 relocated to an Administration building to continue their work for the Rapid React competition and beyond.",
+      "imageUrl": "/img/2020.png"
+    },
+    {
+      "id": 7,
+      "title": "(2023 - Present)",
+      "text": "someone write smth",
+      "imageUrl": "/img/present.png"
+    }
+  ]
+}

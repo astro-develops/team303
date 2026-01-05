@@ -1,0 +1,105 @@
+{
+  "sponsors": {
+    "all": [
+      {
+        "name": "BRRSD",
+        "image": "brrsd.png",
+        "url": "https://www.brrsd.org/",
+        "tier": "platinum"
+      },
+      {
+        "name": "RAMP Team 303",
+        "image": "ramp-logo.png",
+        "url": "https://www.rampteam303.com/",
+        "tier": "platinum"
+      },
+      {
+        "name": "Johnson & Johnson",
+        "image": "j&j.png",
+        "url": "https://www.jnj.com/",
+        "tier": "platinum"
+      },
+      {
+        "name": "Raritan Valley Community College",
+        "image": "rvcc.png",
+        "url": "https://www.raritanval.edu/",
+        "tier": "platinum"
+      },
+
+      {
+        "name": "Bell Labs",
+        "image": "bell-labs.png",
+        "url": "https://www.bell-labs.com/",
+        "tier": "gold"
+      },
+
+      {
+        "name": "Bank of America",
+        "image": "bank.png",
+        "url": "https://www.bankofamerica.com/",
+        "tier": "silver"
+      },
+      {
+        "name": "LightBurn Software",
+        "image": "lightburn.png",
+        "url": "https://lightburnsoftware.com/",
+        "tier": "silver"
+      },
+      {
+        "name": "Mastercam",
+        "image": "mastercam.png",
+        "url": "https://www.mastercam.com/",
+        "tier": "silver"
+      },
+      {
+        "name": "Triad Tool",
+        "image": "triadtool.png",
+        "url": "https://www.triadtool.com/",
+        "tier": "silver"
+      },
+      {
+        "name": "Intuitive Foundation",
+        "image": "intuitive.png",
+        "url": "https://www.intuitive-foundation.org",
+        "tier": "silver"
+      },
+      {
+        "name": "Picatinny Arsenal",
+        "image": "picatinny.png",
+        "url": "https://home.army.mil/picatinny/index.php",
+        "tier": "silver"
+      },
+      {
+        "name": "Optimum",
+        "image": "optimum.png",
+        "url": "https://optimum.com",
+        "tier": "silver"
+      },
+      {
+        "name": "TE Connectivity",
+        "image": "te-connectivity.png",
+        "url": "https://te.com",
+        "tier": "silver"
+      },
+      {
+        "name": "FIRST",
+        "image": "first.png",
+        "url": "https://firstinspires.org",
+        "tier": "silver"
+      },
+
+      {
+        "name": "Daiichi Sankyo",
+        "image": "daiichi-sankyo.png",
+        "url": "https://daiichisankyo.com/",
+        "tier": "bronze"
+      },
+      {
+        "name": "BNY Mellon",
+        "image": "NY-mellon.png",
+        "url": "https://www.bnymellon.com/",
+        "tier": "bronze"
+      }
+    ]
+  }
+}

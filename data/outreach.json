@@ -1,0 +1,93 @@
+{
+  "mentoring": [
+    {
+      "id": "fll",
+      "title": "Mentoring FLL Explore Teams",
+      "description": "Team 303 mentors 12 FLL Explore teams across two local elementary schools. We help guide young students through the fundamentals of STEM and teamwork. Our members help these students learn how to think like engineers by supporting them in building models, creating posters, and developing creative solutions to real-world problems through their final project."
+    },
+    {
+      "id": "ftc",
+      "title": "FTC Team 8812",
+      "description": "We mentor FTC Team 8812 to help them grow faster and feel confident running their team. We meet with them to go over robot design, wiring, and programming, and we show them how to break big problems into smaller steps. We also help with things like engineering notebooks, season planning, and getting ready for judging. Our goal is for 8812 to be able to operate on its own, with us there as support. We’ve learned a lot from FRC, and we want to pass that on so they can compete strongly in FTC."
+    },
+    {
+      "id": "mstdc",
+      "title": "Middle School Technical Design Challenge (MSTDC)",
+      "description": "Team 303 mentors several teams in the Middle School Technical Design Challenge (MSTDC), a competition that encourages students to apply engineering and design skills. We’re also proud to host the final competition at Bridgewater-Raritan Middle School, where middle school teams from across the region come together to compete in their events. Through MSTDC, our team continues to develop creativity, teamwork, and problem-solving skills while supporting the next generation of innovators."
+    },
+    {
+      "id": "rcj",
+      "title": "RCJ Mentorship",
+      "description": "Team 303 proudly sponsored and mentored an RCJ team that earned 2nd place at the national competition. By providing hands-on support and expert guidance, we helped the team refine their skills and strategies, leading them to a top finish on the national stage. It’s a testament to the power of mentorship and teamwork in robotics."
+    }
+  ],
+  "steam_outreach": [
+    {
+      "id": "303global",
+      "title": "303 Global",
+      "description": "Team 303 sends hands-on STEM kits, including water purification and electrical circuit sets, to kids in the Ivory Coast, Sierra Leone, and India. These kits help students learn practical skills while addressing real-world challenges."
+    },
+    {
+      "id": "sensory",
+      "title": "STEAM/Sensory Fair",
+      "description": "As part of its outreach, Team 303 (T.E.S.T. Team) hosts an annual STEAM Fair & Sensory Fair at Bridgewater-Raritan High School, where students design interactive science, art, and engineering exhibits aimed at sparking curiosity in younger learners. The Sensory Fair runs alongside the STEAM event in a quieter, adapted space, offering tactile, low-stimulus activities to welcome children with sensory needs into the world of STEAM."
+    },
+    {
+      "id": "steamweek",
+      "title": "STEAM Week",
+      "description": "During STEAM Week, Team 303 hosts after-school sessions for elementary students in grades 2 to 7, offering fun and engaging activities focused on science, technology, engineering, arts, and math. Each day includes icebreakers, three hands-on STEAM activities, and a group game, all designed and led by Team 303 members to spark creativity and curiosity in young learners."
+    },
+    {
+      "id": "ai",
+      "title": "303.ai",
+      "description": "We’re also running 303.ai, an AI webinar for students in grades 4–12. We’ll cover what AI actually is, why it matters, and how to use tools like chatbots the right way. We’ll show good prompting, talk about what AI can and can’t do, and how to use it for school and robotics. It’s short, practical, and meant to make AI feel useful, not confusing."
+    },
+    {
+      "id": "brik",
+      "title": "Brik Rampage",
+      "description": "Team 303 organizes Brik Rampage, an annual FIRST LEGO League (FLL) Challenge competition held at Bridgewater-Raritan Middle School. Participants engage in the Robot Game, present their research projects, and demonstrate core values, all while fostering teamwork and critical thinking skills. It's a celebration of STEM education, creativity, and community spirit."
+    },
+    {
+      "id": "charlie",
+      "title": "Charlie Run",
+      "description": "Team 303 hosts an annual Charlie Run in memory of Charlie Schulz, a transgender member of the team. The event featured a vibrant color run and aimed to promote inclusivity and equity in STEM fields. Along with the run, we run STEAM workshops and activities. All proceeds supported the creation of a scholarship for LGBTQIA+ youth pursuing careers in STEM disciplines."
+    },
+    {
+      "id": "3dprint",
+      "title": "3D Printed Toys and Devices",
+      "description": "We use CAD and 3D printing to make simple, useful things like assistive tools and sensory toys for neurodiverse individuals. Designing in CAD lets us change the size, shape, and texture to match what someone actually needs, and then we can print it fast and try it out. That way, we’re not just making random parts, we’re making custom stuff that helps people do everyday tasks more easily or gives them something calming to fidget with."
+    }
+  ],
+  "community_service": [
+    {
+      "id": "tour",
+      "title": "303 On Tour",
+      "description": "303 On Tour is Team 303’s traveling outreach initiative, where we bring the excitement of robotics and STEAM directly to schools, afterschool programs, and community centers. Through interactive demonstrations, hands-on activities, and engaging presentations, we aim to inspire curiosity and spark interest in STEAM fields for students of all ages. Our team members share their knowledge, experiences, and passion to make learning fun, accessible, and impactful outside the classroom."
+    },
+    {
+      "id": "bricks",
+      "title": "Bridgewater Bricks over Borders",
+      "description": "BridgewaterBricks is Team 303’s community drive to collect used LEGO/building bricks. All the community has to do is drop clean bricks at the BRHS main office box, and we’ll sort and ship them through a partner nonprofit to kids in underserved communities in the U.S. and abroad (e.g., Haiti, Zimbabwe). Do you want to help more? You can also sponsor shipping (about $20 per box). Please email us for more information."
+    },
+    {
+      "id": "hospital",
+      "title": "Hospital Kits",
+      "description": "Team 303 brings STEM to children in hospitals by assembling and donating Hospital STEM Kits filled with fun, hands-on activities. These kits provide young patients with engaging and educational projects to explore science and engineering during their hospital stay, helping to brighten their day through learning."
+    },
+    {
+      "id": "4h",
+      "title": "4H Fair + Forest Fest",
+      "description": "Team 303 actively participates in local community events to promote STEM education and environmental awareness. At the Somerset County 4-H Fair, the team showcases their robotics projects, sharing insights and engaging with attendees to inspire interest in science and technology. Similarly, during Forest Fest at Hillside Intermediate School, Team 303 demonstrates their robots and hosts the Solar Car competition, encouraging young minds to explore sustainable energy solutions."
+    },
+    {
+      "id": "serves",
+      "title": "303 Serves Those Who Serve",
+      "description": "303 Serves Those Who Serve is Team 303’s care-package drive for deployed service members. Students, mentors, and friends donate requested essentials, and we bundle them and pass them through our veterans contact for overseas shipment."
+    },
+    {
+      "id": "recruit",
+      "title": "Recruitment Fair",
+      "description": "We host a Team 303 recruitment fair and kept it simple but fun. We had different stands for each subteam so people could see what we actually do, plus a robot demo to show our robot from the last season. We added a quick scavenger hunt where you had to visit the stations, and we gave out prizes. There was food, people talking, and overall it felt like a chill, welcoming environment for new members to indulge into the FIRST atmosphere."
+    }
+  ]
+}

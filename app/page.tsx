@@ -10,7 +10,6 @@ import FrcKickoffToast from "@/components/frcKickoff"
 
 
 export default function Home() {
-    const { all } = sponsors;
     return (
         <main className="bg-[#DBE9EE] text-[#0C2B2C] m-0 p-0 overflow-x-hidden">
             <FrcKickoffToast />

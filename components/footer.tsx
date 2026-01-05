@@ -1,8 +1,6 @@
 "use client";
 
-import Image from "next/image";
-import { motion } from "framer-motion";
-import { Instagram, Twitter, Youtube, Mail, MapPin } from "lucide-react";
+import { Instagram, Youtube, Mail, MapPin } from "lucide-react";
 import Link from "next/link";
 
 export default function Footer() {

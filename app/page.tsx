@@ -41,7 +41,9 @@ export default function Home() {
                     </div>
                     <div className="w-full lg:w-1/2 py-10 lg:py-46 text-center lg:text-left flex flex-col items-center lg:items-start">
                         <Image src="/text/Whoarewe.png" alt="" width={450} height={100} className="max-w-full h-auto" />
-                        <p className="w-full lg:w-2/3 py-6 font-light">Insert yap sess here</p>
+                        <p className="italic w-full lg:w-2/3 mt-4 py-6 leading-relaxed text-white max-w-2xl">
+                            Team 303 is a fully student-led robotics team at Bridgewater-Raritan High School in Bridgewater, New Jersey. Every year, we design, build, and program a new robot for the FIRST Robotics Competition. Outside of competitions, we focus on outreach, mentoring, and sharing STEM with our community.
+                        </p>
                         <a href="../story"><button className="px-12 py-2 border-2 border-[#FFF] hover:px-14 ease-in-out duration-300">Learn More &gt; </button></a>
                     </div>
                 </div>
@@ -57,23 +59,30 @@ export default function Home() {
                 </svg>
             </section>
 
-            <section className="min-h-screen bg-[#DBE9EE] flex flex-col justify-center items-center text-white text-center lg:py-0 lg:-mt-[12rem] lg:-mb-[8rem] relative z-10">
-                <Image src="/text/OurSponsors.svg" alt="" width={400} height={100} className="-rotate-[3.5deg] p-6 mb-4 w-full mt-12 max-w-[400px]" />
-                <SponsorMarquee sponsors={sponsors} />
-                <div className="w-full flex justify-center lg:justify-end lg:pr-10 mt-6">
-                    <motion.a
-                        whileHover={{ scale: 1.05 }}
-                        transition={{ type: "spring", stiffness: 400, damping: 10 }}
-                        className="box rounded-full -rotate-[3.5deg]"
-                        href="../sponsors"
-                    >
-                        <Button
-                            className="border-[#008080] px-10 lg:px-18 py-5 text-[#091314] text-[1rem] bg-[#FFFFFF00] hover:bg-[#00808033] border-[3px]"
-                            variant="outline"
+            <section className="min-h-[45vh] flex flex-col justify-center items-center text-white text-center lg:py-0 lg:-mt-[10rem] lg:-mb-[4rem] relative z-40">
+                {/* Rotated background band to match heading angle */}
+                <div className="absolute left-[-18%] right-[-18%] top-[-4%] bottom-[-16%] -rotate-[3.5deg] bg-[#DBE9EE] z-20 transform-origin-top-left" />
+
+                <div className="relative z-50 w-full flex flex-col items-center">
+                    <Image src="/text/OurSponsors.svg" alt="" width={400} height={100} className="-rotate-[3.5deg] p-4 mb-2 w-full mt-6 max-w-[400px]" />
+                    <div className="w-full">
+                        <SponsorMarquee sponsors={sponsors} />
+                    </div>
+                    <div className="w-full flex justify-center lg:justify-end lg:pr-10 -mt-6 lg:-mt-8">
+                        <motion.a
+                            whileHover={{ scale: 1.05 }}
+                            transition={{ type: "spring", stiffness: 400, damping: 10 }}
+                            className="box rounded-full -rotate-[3.5deg]"
+                            href="../sponsors"
                         >
-                            Check out our sponsors!
-                        </Button>
-                    </motion.a>
+                            <Button
+                                className="border-[#008080] px-10 lg:px-18 py-5 text-[#091314] text-[1rem] bg-[#FFFFFF00] hover:bg-[#00808033] border-[3px]"
+                                variant="outline"
+                            >
+                                Check out our sponsors!
+                            </Button>
+                        </motion.a>
+                    </div>
                 </div>
             </section>
 
@@ -93,14 +102,16 @@ export default function Home() {
 
                 <div className="flex flex-col w-full items-center text-center gap-10 justify-center py-20 lg:py-46 px-6">
                     <Image src="/text/OurCommunity.svg" alt="" width={450} height={100} className="max-w-full h-auto" />
-                    <p className="w-full lg:w-2/3 py-6 font-light">someone write smth here</p>
+                    <p className="italic w-full lg:w-2/3 py-6 text-white leading-relaxed max-w-2xl">
+                        We believe engineering should be for everyone. That’s why we run outreach events, mentor younger teams, and partner with local groups to bring hands-on STEM experiences to our community.
+                    </p>
                     <motion.a
                         whileHover={{ scale: 1.05 }}
                         transition={{ type: "spring", stiffness: 400, damping: 10 }}
                         className="box rounded-sm bg-[#DBE9EE]/80 px-6 py-3 text-[#000]"
                         href="../outreach"
                     >
-                        See what we do
+                        See What We Do
                     </motion.a>
                 </div>
 

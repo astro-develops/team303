@@ -39,11 +39,18 @@ export default function HistoryPage() {
         transition={{ duration: 1 }}
         className="flex w-full justify-center pt-36"
       >
-        <Image src="text/OurStory.svg" alt="History" width={400} height={100} className="max-w-[250px] md:max-w-[400px]"  />
+        <Image src="text/OurStory.svg" alt="History" width={400} height={100} className="max-w-[250px] md:max-w-[400px] mb-8"  />
       </motion.div>
 
       <section className="max-w-7xl mx-auto px-6 pb-12">
-        <p className="text-center pb-12">Put smth here</p>
+        <div className="space-y-4 max-w-3xl mx-auto text-base text-center pb-12">
+          <p>
+            Hailing from Bridgewater, New Jersey, The T.E.S.T. Team 303 competes in FIRST Mid-Atlantic events throughout the year. Based in Bridgewater-Raritan High School, the team designs, builds, and programs robots to compete in the FIRST Robotics Competition (FRC). Each season begins with a kickoff, where the year’s challenge is revealed to teams worldwide, followed by an intense build period where we prototype, test, and refine our robot before traveling to compete at events.
+          </p>
+          <p>
+            Both corporate and local sponsors are key to the team’s sustainability. These sponsors support the team financially and provide mentors and services, such as sheet metal fabrication. Their contributions give our team access to the resources we need to succeed, while helping students develop skills that carry into future careers.
+          </p>
+        </div>
         <div ref={lineContainerRef} className="relative">
 
           <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-[#008080]/10 hidden md:block" />

@@ -12,6 +12,7 @@ interface OutreachItem {
   id: string;
   title: string;
   description: string;
+  image?: string;
 }
 
 const containerVariants: Variants = {
@@ -63,7 +64,10 @@ function HighlightSection() {
           )}
         >
           <div className="relative aspect-video scale-90 w-full flex-1 overflow-hidden rounded-2xl bg-white/20 shadow-xl border border-[#008080]/20">
-            <Image src={`/outreach/${item.id}.png`} alt={item.title} fill className="object-cover" />
+            {(() => {
+              const src = item.image ? `/outreach/${item.image}` : `/outreach/${item.id}.png`;
+              return <Image src={src} alt={item.title} fill className="object-contain" />;
+            })()}
           </div>
           <div className="flex-1 space-y-6">
             <h2 className="text-3xl font-bold md:text-4xl text-[#0C2B2C]">
@@ -97,7 +101,10 @@ function InitiativeGrid({ items }: { items: OutreachItem[] }) {
             </CardHeader>
             <CardContent className="flex flex-1 flex-col space-y-4">
               <div className="relative aspect-[4/3] w-full overflow-hidden rounded-xl bg-[#DBE9EE]">
-                <Image src={`/outreach/${item.id}.png`} alt={item.title} fill className="object-cover" />
+                {(() => {
+                  const src = item.image ? `/outreach/${item.image}` : `/outreach/${item.id}.png`;
+                  return <Image src={src} alt={item.title} fill className="object-contain" />;
+                })()}
               </div>
               <p className="flex-1 text-sm leading-relaxed text-[#0C2B2C]/80">
                 {item.description}

@@ -20,6 +20,19 @@
       "title": "RCJ Mentorship",
       "description": "Team 303 proudly sponsored and mentored an RCJ team that earned 2nd place at the national competition. By providing hands-on support and expert guidance, we helped the team refine their skills and strategies, leading them to a top finish on the national stage. It’s a testament to the power of mentorship and teamwork in robotics."
     }
+    ,
+    {
+      "id": "Alumni-Network",
+      "title": "Alumni Network",
+      "description": "We’re building a Team 303 alumni network to connect current members with graduates who’ve been through the same journey. Alumni can share internships, referrals, resume feedback, mock interviews, and real advice on college + careers, all in one place through our Slack and an alumni directory."
+    }
+    ,
+    {
+      "id": "8588-pic",
+      "title": "FRC Team Mentoring",
+      "description": "We mentor FRC Team 8588 year-round, helping with everything from design and machining to competition prep. Our team supports them with CNC work, improving their mechanical build, and troubleshooting issues as they come up. We also provide programming help and assist with outreach events, new opportunities, and team growth so they can keep leveling up all season long.",
+      "image": "8588-pic.jpeg"
+    }
   ],
   "steam_outreach": [
     {
@@ -55,8 +68,10 @@
     {
       "id": "3dprint",
       "title": "3D Printed Toys and Devices",
-      "description": "We use CAD and 3D printing to make simple, useful things like assistive tools and sensory toys for neurodiverse individuals. Designing in CAD lets us change the size, shape, and texture to match what someone actually needs, and then we can print it fast and try it out. That way, we’re not just making random parts, we’re making custom stuff that helps people do everyday tasks more easily or gives them something calming to fidget with."
+      "description": "We work with the local nonprofit Empower3D to design, 3D print, and help ship assistive tools and sensory toys for neurodiverse individuals. Using CAD lets us quickly customize the size, shape, and texture to fit real needs, then print and test fast. The goal is simple: create useful, calming tools that actually help people day-to-day.",
+      "image": "303-fidget.jpeg"
     }
+    
   ],
   "community_service": [
     {
@@ -88,6 +103,23 @@
       "id": "recruit",
       "title": "Recruitment Fair",
       "description": "We host a Team 303 recruitment fair and kept it simple but fun. We had different stands for each subteam so people could see what we actually do, plus a robot demo to show our robot from the last season. We added a quick scavenger hunt where you had to visit the stations, and we gave out prizes. There was food, people talking, and overall it felt like a chill, welcoming environment for new members to indulge into the FIRST atmosphere."
+    }
+    ,
+    {
+      "id": "RTR-pic",
+      "title": "Reason to Recycle (RTR)",
+      "description": "Reason To Recycle (RTR) is Team 303’s campus-wide clean-up and recycling service initiative to help keep our school greener and cleaner. Students can join the event to earn volunteer hours while reducing pollution, waste, and greenhouse gas emissions. To make recycling actually work, we ask everyone to rinse out plastics before putting them in the bin so there’s no contamination."    },
+    {
+      "id": "Robotics-Courses-BRHS",
+      "title": "Robotics Curriculum",
+      "description": "We directly helped influence robotics education at BRHS by supporting the creation of an official Engineering & Robotics Concentration. This gives more students a real pathway to explore engineering through hands-on robotics classes, design-based projects, and advanced course options. It's a big step toward making robotics feel like a real part of the school's academics, not just an after-school club.",
+      "image": "Robotics-Courses-BRHS.png"
+    },
+    {
+      "id": "303-Advocacy",
+      "title": "303 Board of Education Advocacy",
+      "description": "Team 303 students attended Bridgewater-Raritan Board of Education meetings and spoke during public comment to support keeping Policy 5756, the district's transgender student protections policy, after proposals were made to repeal it. During the discussion, we also honored our late transgender classmate Charlie Schulz, whose passing inspired the 'I Am Valid' initiative. Our goal was to make sure student voices were heard and that BRHS stays a safe, supportive place for everyone.",
+      "image": "303-Advocacy.jpg"
     }
   ]
 }

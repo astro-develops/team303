@@ -66,7 +66,7 @@ export default function SponsorMarquee({ sponsors, estimatedCardWidth = 150 }: S
   const row2Repeated = repeatRow(row2, screenWidth, estimatedCardWidth);
 
   return (
-    <div className="w-screen overflow-hidden relative marquee-container -rotate-[3.5deg]">
+    <div className="w-screen overflow-hidden relative marquee-container -rotate-[3.5deg] z-0">
       <article className="flex flex-col gap-6">
         <div className="marquee">
           <MarqueeRow data={row1Repeated} />

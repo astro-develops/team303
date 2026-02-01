@@ -22,7 +22,7 @@ export default function Home() {
           </p>
 
           <div className="space-y-2 text-gray-800 text-sm md:text-base">
-            <p><b>Email:</b> team303@frc.com</p>
+            <p><b>Email:</b> <a href="mailto:frcteam303.general@gmail.com" className="text-[#008080] underline">frcteam303.general@gmail.com</a></p>
             <p><b>Phone:</b> (555) 123-4567</p>
             <p><b>Location:</b> Bridgewater-Raritan High School</p>
           </div>

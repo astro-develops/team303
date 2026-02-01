@@ -4,6 +4,33 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import type { RobotSeason } from "@/types/robots";
 
+const robotNameByYear: Record<number, string> = {
+  2025: "Anomaly",
+  2024: "Chompy",
+  2023: "Drifty",
+  2022: "Janky",
+  2020: "Poly",
+  2019: "Slippy",
+  2018: "Rocky",
+  2017: "Bendy",
+  2016: "Twitchy",
+  2015: "Sparky",
+  2014: "Ugly Betty",
+  2013: "Bernoulli",
+  2010: "Soccerbot",
+  2007: "WingBot 2.0",
+  2005: "Dumpvalve",
+  2004: "The Fridge",
+  2003: "WingBot",
+  2002: "Clawbot",
+  2000: "Schultz",
+};
+
+function getRobotTitle(year: number) {
+  const name = robotNameByYear[year];
+  return name ? `Robot ${year} – ${name}` : `Robot ${year}`;
+}
+
 interface Props {
   open: boolean;
   season: RobotSeason | null;
@@ -37,7 +64,7 @@ export default function DiamondModal({ open, season, onClose }: Props) {
 
           <div className="flex-1">
             <div className="flex items-baseline justify-between">
-              <h2 className="text-2xl font-bold">Robot {season.year}</h2>
+              <h2 className="text-2xl font-bold">{getRobotTitle(season.year)}</h2>
               <div className="text-sm text-gray-600">
                 Wins: <span className="font-medium">{season.totalWins}</span>{" "}
                 • Losses: <span className="font-medium">{season.totalLosses}</span>
@@ -45,7 +72,7 @@ export default function DiamondModal({ open, season, onClose }: Props) {
             </div>
 
             <p className="mt-2 text-gray-700">
-              Season overview for team 303 in {season.year}.
+              Season overview for Team 303 in {season.year}.
             </p>
 
             <hr className="my-4" />

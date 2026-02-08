@@ -35,7 +35,8 @@ export default function Nav() {
   const teamSubLinks = [
     { href: "/story", title: "Our Story", description: "From hardships to success and back." },
     { href: "/sponsors", title: "Sponsors", description: "Huge thanks to our sponsors." },
-    { href: "/ramp", title: "Ramp & Mentors", description: "Our proud team of parents and mentors." },
+    { href: "/advisors-mentors", title: "Advisors & Mentors", description: "Meet our advisors and mentors." },
+    { href: "/ramp", title: "Team 303 R.A.M.P.", description: "Our Parent Organization." },
   ];
 
   return (
